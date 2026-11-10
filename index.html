@@ -10,10 +10,15 @@
   html, body { margin: 0; height: 100%; }
   body { display: flex; align-items: center; justify-content: center; background: var(--bg); color: var(--ink);
          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  body { flex-direction: column; gap: 28px; }
   h1 { margin: 0; padding: 0 16px; font-size: clamp(36px, 9vw, 84px); font-weight: 800; letter-spacing: .14em; }
+  a { color: inherit; opacity: .6; font-size: 15px; letter-spacing: .08em; text-decoration: none;
+      border-bottom: 1px solid currentColor; padding-bottom: 2px; }
+  a:hover, a:focus-visible { opacity: 1; }
 </style>
 </head>
 <body>
 <h1>SUPRACORE</h1>
+<a href="support/pdf-works/">PDF Works</a>
 </body>
 </html>
