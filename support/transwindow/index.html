@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="TransWindow 지원: Mac 화면·카메라·사진·웹페이지 번역, 언어 팩, Safari 확장, Pro 구매 복원 및 문제 해결. Support for TransWindow on Mac, iPhone and iPad.">
+<title>TransWindow — 지원 / Support</title>
+<link rel="icon" href="app-icon.png">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#0b1025;color:#f4f6ff;font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse at 15% 10%,#38326488,transparent 60%),radial-gradient(ellipse at 90% 80%,#13464e66,transparent 60%);pointer-events:none;z-index:-1}
+.wrap{max-width:960px;margin:auto;padding:28px 24px 64px}
+header{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700}
+.brand img{width:48px;height:48px;border-radius:12px}
+.langs{display:flex;gap:8px}
+button{font:inherit;color:#fff;border:1px solid #78819c;background:transparent;padding:7px 12px;border-radius:20px;cursor:pointer}
+button[aria-pressed=true]{background:#83edd3;color:#0b1025;border-color:#83edd3}
+a{color:#91efd9;text-underline-offset:4px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #91efd9;outline-offset:5px}
+.hero{padding:54px 0 32px;animation:arrive .6s ease-out}
+.eyebrow{color:#91efd9;font-size:13px;font-weight:600;letter-spacing:.08em}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.2;margin:14px 0 20px;letter-spacing:-.03em}
+h2{font-size:23px;margin:0 0 18px}
+h3{font-size:17px;margin:0 0 8px}
+p{margin:0 0 12px}
+.muted{color:#b9c3d8}
+.nav{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}
+.nav a{text-decoration:none;background:#ffffff0b;border:1px solid #ffffff26;border-radius:24px;padding:8px 16px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{border:1px solid #ffffff24;border-radius:22px;padding:24px;background:#ffffff07}
+.section{margin:36px 0;scroll-margin-top:24px}
+.notice{border-left:3px solid #91efd9;background:#91efd909;padding:18px 22px;border-radius:0 16px 16px 0}
+.badge{display:inline-block;font-size:12px;background:#91efd91c;color:#91efd9;border-radius:12px;padding:2px 10px;margin-bottom:12px}
+ul,ol{padding-left:22px;margin:8px 0}
+li{margin:6px 0}
+details{border-top:1px solid #ffffff24;padding:16px 0}
+summary{cursor:pointer;font-weight:600}
+details p{margin-top:12px;color:#c5cede}
+footer{border-top:1px solid #ffffff24;margin-top:44px;padding-top:22px;font-size:13px;color:#b9c3d8}
+[hidden]{display:none!important}
+@keyframes arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}.wrap{padding:20px 18px 48px}.card{padding:20px}.hero{padding-top:38px}header{align-items:flex-start}.langs{flex-wrap:wrap;justify-content:flex-end}h2{font-size:21px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero{animation:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header>
+  <div class="brand"><img src="app-icon.png" alt="" width="48" height="48">TransWindow</div>
+  <div class="langs" role="group" aria-label="Language / 언어">
+    <button type="button" data-lang="ko" aria-pressed="true">한국어</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<div id="content-ko" lang="ko">
+  <div class="hero">
+    <div class="eyebrow">TRANSWINDOW · 지원</div>
+    <h1>읽던 자리에서<br>바로 번역.</h1>
+    <p class="muted">프레임으로 글자를 감싸면 원하는 언어로 읽을 수 있습니다.<br>Mac, iPhone, iPad에서 쓸 수 있고 글자 인식과 번역은 기기 안에서 처리합니다.</p>
+    <nav class="nav" aria-label="페이지 메뉴">
+      <a href="#start-ko">시작하기</a>
+      <a href="#languages-ko">언어 팩</a>
+      <a href="#safari-ko">Safari 확장</a>
+      <a href="#pro-ko">무료 / Pro</a>
+      <a href="#faq-ko">문제 해결</a>
+      <a href="#contact-ko">문의</a>
+    </nav>
+    <p class="muted">macOS 26.4 이상, iOS·iPadOS 26.4 이상 · 사용 중인 버전에 따라 메뉴가 다를 수 있습니다.</p>
+  </div>
+
+  <section class="section" id="start-ko">
+    <h2>어디서 시작하나요?</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="badge">Mac</span>
+        <h3>화면 위 번역 프레임</h3>
+        <p>앱을 열면 메뉴 막대 아이콘과 함께 번역 프레임이 나타납니다. 프레임을 글자 위로 옮기고 크기를 맞춘 뒤 새로 고침 단추를 누르면 결과 패널에 번역이 나옵니다.</p>
+        <p class="muted">처음에는 시스템 설정 &gt; 개인정보 보호 및 보안 &gt; 화면 및 시스템 오디오 기록에서 TransWindow를 켜야 합니다.</p>
+      </article>
+      <article class="card">
+        <span class="badge">Mac</span>
+        <h3>직접 써서 번역 · 복사한 글 번역</h3>
+        <p>메뉴 막대 메뉴에서 ‘직접 써서 번역…’을 고르면 글을 입력해 번역하고, ‘복사한 글 번역’을 고르면 방금 복사한 글이나 이미지를 번역합니다.</p>
+      </article>
+      <article class="card">
+        <span class="badge">iPhone · iPad</span>
+        <h3>카메라</h3>
+        <p>메뉴판이나 표지판에 카메라를 비추고 프레임 안에 글자를 넣은 뒤 번역을 누릅니다. 카메라 권한이 필요합니다.</p>
+      </article>
+      <article class="card">
+        <span class="badge">iPhone · iPad</span>
+        <h3>이미지</h3>
+        <p>사진·스크린샷을 고르거나 파일 앱에서 이미지·PDF를 불러와 프레임을 글자 위에 놓습니다. 직접 고른 항목만 앱에 전달되므로 사진 보관함 권한을 묻지 않습니다.</p>
+      </article>
+      <article class="card">
+        <span class="badge">iPhone · iPad</span>
+        <h3>웹</h3>
+        <p>앱 안의 브라우저에 주소를 입력해 페이지를 열고 프레임을 글자 위에 놓습니다. 웹 탐색에는 인터넷 연결이 필요합니다.</p>
+      </article>
+      <article class="card">
+        <span class="badge">iPhone · iPad</span>
+        <h3>단축어</h3>
+        <p>단축어 앱에서 ‘카메라로 번역’, ‘이미지로 번역’, ‘웹에서 번역’ 동작을 쓸 수 있습니다. ‘스크린샷 찍기’ 다음에 ‘이미지로 번역’을 넣어 뒷면 탭이나 동작 버튼에 연결해 보세요.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section card" id="languages-ko">
+    <h2>언어 팩과 오프라인 번역</h2>
+    <p>번역은 Apple 번역 기능을 사용합니다. 처음 쓰는 언어 조합은 언어 팩을 내려받아야 하며, 앱 설정의 ‘언어 팩 미리 받기’에서 미리 받아 둘 수 있습니다.</p>
+    <p>언어 팩을 받아 두면 인터넷 없이도 번역할 수 있습니다. 여행 전에 와이파이에서 받아 두는 것을 권합니다.</p>
+    <p class="muted">지원 언어는 기기의 Apple 번역 서비스에 따라 달라집니다. 받은 언어 팩은 시스템 설정의 번역 언어 항목에서 관리합니다.</p>
+  </section>
+
+  <section class="section" id="safari-ko">
+    <h2>Safari 확장</h2>
+    <p>Safari에서 고른 글이나 누른 문단을 그 자리에서 번역합니다.</p>
+    <ol>
+      <li>iPhone·iPad: 설정 &gt; 앱 &gt; Safari &gt; 확장 프로그램에서 TransWindow를 켭니다. Mac: Safari 설정 &gt; 확장 프로그램에서 켭니다.</li>
+      <li>Safari에서 번역할 페이지를 엽니다.</li>
+      <li>주소창 옆 페이지 메뉴(Mac은 도구 막대)에서 TransWindow를 고릅니다.</li>
+      <li>‘문단을 눌러 번역’이 켜지면 누르는 문단마다 번역합니다. 글을 고른 다음 TransWindow를 고르면 고른 글만 번역합니다.</li>
+    </ol>
+    <p class="muted">확장에서는 언어 팩을 받을 수 없습니다. 처음 쓰는 언어는 앱의 ‘언어 팩 미리 받기’에서 먼저 받아 주세요.</p>
+  </section>
+
+  <section class="section" id="pro-ko">
+    <h2>무료 기능과 Pro</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>무료로 사용</h3>
+        <ul>
+          <li>사각형 프레임으로 하는 수동 번역</li>
+          <li>결과 패널에서 원문·번역문 보기와 복사</li>
+          <li>언어 팩 미리 받기와 오프라인 번역</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Pro · 1회 구매</h3>
+        <ul>
+          <li>원문 글자 위에 번역 덮어쓰기</li>
+          <li>실시간 번역·갱신</li>
+          <li>프레임을 옮기거나 크기를 바꾼 뒤 자동 번역</li>
+          <li>둥근 사각형·원형 프레임과 자동 숨김</li>
+          <li>글꼴·테두리·덮어쓰기 모양 조절</li>
+          <li>Mac: 여러 프레임</li>
+        </ul>
+        <p class="muted">구독이 아닙니다. 가격은 앱 내 구매 화면에서 확인하세요.</p>
+      </article>
+    </div>
+    <p class="notice" style="margin-top:16px">Pro는 한 번 구매하면 같은 Apple 계정의 Mac, iPhone, iPad에서 함께 쓸 수 있습니다. 다른 기기에서는 Pro 화면의 ‘구매 복원’을 눌러 주세요.</p>
+  </section>
+
+  <section class="section" id="faq-ko">
+    <h2>자주 묻는 질문 · 문제 해결</h2>
+    <details><summary>Mac에서 번역이 나오지 않고 권한이 필요하다고 해요.</summary><p>시스템 설정 &gt; 개인정보 보호 및 보안 &gt; 화면 및 시스템 오디오 기록에서 TransWindow를 켠 뒤 앱을 다시 열어 주세요. 화면의 글자를 읽으려면 이 권한이 필요합니다.</p></details>
+    <details><summary>언어 팩을 받으라고 나와요.</summary><p>처음 쓰는 언어 조합은 언어 팩이 필요합니다. 안내에 따라 내려받거나 설정의 ‘언어 팩 미리 받기’를 이용하세요. 내려받기에는 인터넷 연결이 필요합니다.</p></details>
+    <details><summary>원하는 언어가 목록에 없어요.</summary><p>지원 언어는 기기의 Apple 번역 서비스가 정합니다. OS를 최신 버전으로 업데이트하면 언어가 추가될 수 있습니다.</p></details>
+    <details><summary>글자를 잘 읽지 못해요.</summary><p>프레임을 글자에 맞게 좁히고, 글자가 너무 작으면 화면을 확대해 보세요. 카메라에서는 밝은 곳에서 흔들림 없이 비추면 인식이 좋아집니다. 손글씨나 장식이 많은 글꼴은 인식이 어려울 수 있습니다.</p></details>
+    <details><summary>웹 모드에서 화면 녹화를 허용하라고 물어요.</summary><p>일부 동영상은 일반 방법으로는 화면이 검게 찍혀 글자를 읽을 수 없습니다. 그때만 시스템 화면 녹화 기능으로 앱 화면을 받아 자막을 읽습니다. 마이크는 쓰지 않으며, 화면을 저장하거나 기기 밖으로 보내지 않습니다. 허용하지 않아도 다른 기능은 그대로 쓸 수 있습니다.</p></details>
+    <details><summary>Safari 확장이 번역하지 않아요.</summary><p>확장이 켜져 있는지 확인하고, 처음 쓰는 언어라면 앱에서 언어 팩을 먼저 받아 주세요. 페이지를 새로 고친 뒤 다시 시도해 보세요.</p></details>
+    <details><summary>Pro를 구매했는데 잠겨 있어요.</summary><p>구매한 Apple 계정으로 로그인했는지 확인하고, 앱의 Pro 화면에서 ‘구매 복원’을 선택하세요. 네트워크 연결도 확인해 주세요. 계속 문제가 있으면 오류 문구와 앱·OS 버전을 보내 주세요.</p></details>
+    <details><summary>번역 기록은 어디에 저장되나요?</summary><p>최근 번역 기록(최대 200개)은 앱이 실행 중일 때만 메모리에 있으며, 앱을 끄면 지워집니다. 파일로 저장하거나 기기 밖으로 보내지 않습니다.</p></details>
+    <details><summary>화면이나 사진이 서버로 전송되나요?</summary><p>아니요. 글자 인식(Apple Vision)과 번역(Apple 번역)은 기기 안에서 처리하며, 개발자는 서버를 운영하지 않습니다. 자세한 내용은 <a href="privacy.html">개인정보 처리방침</a>을 확인하세요.</p></details>
+  </section>
+
+  <section class="section card" id="contact-ko">
+    <h2>문의</h2>
+    <p>오류 내용, 앱 버전, 기기와 OS 버전, 사용한 모드(Mac 프레임·카메라·이미지·웹·Safari 확장)와 언어 조합을 알려 주세요. 화면을 첨부할 때는 개인정보를 가려 주세요.</p>
+    <p><a href="mailto:support@supracore.co.kr">support@supracore.co.kr</a></p>
+    <p class="muted">보통 2~3일 안에 답변드립니다.</p>
+  </section>
+  <p><a href="privacy.html">개인정보 처리방침</a></p>
+</div>
+
+<div id="content-en" lang="en">
+  <div class="hero">
+    <div class="eyebrow">TRANSWINDOW · SUPPORT</div>
+    <h1>Translate it<br>right where you read it.</h1>
+    <p class="muted">Place a frame around text and read it in your language.<br>Available on Mac, iPhone and iPad. Text recognition and translation run on your device.</p>
+    <nav class="nav" aria-label="Page navigation">
+      <a href="#start-en">Get started</a>
+      <a href="#languages-en">Language packs</a>
+      <a href="#safari-en">Safari extension</a>
+      <a href="#pro-en">Free / Pro</a>
+      <a href="#faq-en">Help</a>
+      <a href="#contact-en">Contact</a>
+    </nav>
+    <p class="muted">Requires macOS 26.4 or later, or iOS/iPadOS 26.4 or later. Menus may differ in your installed version.</p>
+  </div>
+
+  <section class="section" id="start-en">
+    <h2>Choose where to start</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="badge">Mac</span>
+        <h3>Translation frame on your screen</h3>
+        <p>Opening the app shows a menu bar icon and a translation frame. Move the frame over text, resize it and click the refresh button to read the translation in the result panel.</p>
+        <p class="muted">First, turn on TransWindow in System Settings &gt; Privacy &amp; Security &gt; Screen &amp; System Audio Recording.</p>
+      </article>
+      <article class="card">
+        <span class="badge">Mac</span>
+        <h3>Type to translate · Translate copied text</h3>
+        <p>From the menu bar menu, choose the typing option to enter text yourself, or the copied-text option to translate the text or image you just copied.</p>
+      </article>
+      <article class="card">
+        <span class="badge">iPhone · iPad</span>
+        <h3>Camera</h3>
+        <p>Point the camera at a menu or sign, fit the text inside the frame and tap Translate. Camera permission is required.</p>
+      </article>
+      <article class="card">
+        <span class="badge">iPhone · iPad</span>
+        <h3>Image</h3>
+        <p>Choose photos or screenshots, or import an image or PDF from Files, then place the frame over the text. Only the items you choose are passed to the app, so it never asks for photo library access.</p>
+      </article>
+      <article class="card">
+        <span class="badge">iPhone · iPad</span>
+        <h3>Web</h3>
+        <p>Enter an address in the in-app browser and place the frame over text on the page. Browsing requires an internet connection.</p>
+      </article>
+      <article class="card">
+        <span class="badge">iPhone · iPad</span>
+        <h3>Shortcuts</h3>
+        <p>The Shortcuts app offers actions for translating with the camera, from an image and on the web. Try a screenshot action followed by the image translation action, assigned to Back Tap or the Action button.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section card" id="languages-en">
+    <h2>Language packs and offline translation</h2>
+    <p>Translation uses Apple’s translation feature. A language pair you have not used before needs a language pack, which you can download ahead of time in the app’s settings.</p>
+    <p>With the packs downloaded, translation works without an internet connection. Downloading them on Wi-Fi before a trip is recommended.</p>
+    <p class="muted">Supported languages depend on Apple’s translation service on your device. Downloaded packs are managed in the translation languages section of System Settings.</p>
+  </section>
+
+  <section class="section" id="safari-en">
+    <h2>Safari extension</h2>
+    <p>Translate selected text or a tapped paragraph right on the page in Safari.</p>
+    <ol>
+      <li>iPhone and iPad: turn on TransWindow in Settings &gt; Apps &gt; Safari &gt; Extensions. Mac: turn it on in Safari Settings &gt; Extensions.</li>
+      <li>Open the page you want to translate in Safari.</li>
+      <li>Choose TransWindow from the page menu next to the address bar (the toolbar on Mac).</li>
+      <li>Paragraph translation turns on, and each paragraph you tap is translated. Select text first and then choose TransWindow to translate only the selection.</li>
+    </ol>
+    <p class="muted">The extension cannot download language packs. Download new languages in the app first.</p>
+  </section>
+
+  <section class="section" id="pro-en">
+    <h2>Free features and Pro</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Free to use</h3>
+        <ul>
+          <li>Manual translation with a rectangular frame</li>
+          <li>Viewing and copying the original and translated text in the result panel</li>
+          <li>Downloading language packs and translating offline</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Pro · One-time purchase</h3>
+        <ul>
+          <li>Overlay translations on top of the original text</li>
+          <li>Live translation and refresh</li>
+          <li>Automatic translation after moving or resizing the frame</li>
+          <li>Rounded and circular frames, and auto-hide</li>
+          <li>Font, border and overlay appearance controls</li>
+          <li>Mac: multiple frames</li>
+        </ul>
+        <p class="muted">Not a subscription. See the in-app purchase screen for pricing.</p>
+      </article>
+    </div>
+    <p class="notice" style="margin-top:16px">One Pro purchase works on Mac, iPhone and iPad with the same Apple Account. On another device, choose Restore Purchases on the Pro screen.</p>
+  </section>
+
+  <section class="section" id="faq-en">
+    <h2>Frequently asked questions</h2>
+    <details><summary>On Mac, nothing is translated and the app says it needs permission.</summary><p>Turn on TransWindow in System Settings &gt; Privacy &amp; Security &gt; Screen &amp; System Audio Recording, then reopen the app. This permission is required to read text on your screen.</p></details>
+    <details><summary>The app asks me to download a language pack.</summary><p>A language pair you have not used before needs a language pack. Follow the prompt or download it ahead of time in the app’s settings. Downloading requires an internet connection.</p></details>
+    <details><summary>The language I want is not listed.</summary><p>Supported languages are determined by Apple’s translation service on your device. Updating to the latest OS version may add languages.</p></details>
+    <details><summary>Text is not recognized well.</summary><p>Fit the frame closely around the text, and zoom in if the text is very small. With the camera, good lighting and a steady hand help. Handwriting and decorative fonts can be hard to recognize.</p></details>
+    <details><summary>Web mode asks me to allow screen recording.</summary><p>Some videos appear black when captured the usual way, so their text cannot be read. Only in that case, the app uses the system screen recording feature to read captions from its own screen. The microphone is not used, and the screen is not saved or sent off your device. Everything else works if you decline.</p></details>
+    <details><summary>The Safari extension does not translate.</summary><p>Check that the extension is turned on. For a new language, download its language pack in the app first. Reload the page and try again.</p></details>
+    <details><summary>I purchased Pro, but it still looks locked.</summary><p>Check that you are signed in with the Apple Account used for the purchase and choose Restore Purchases on the Pro screen. Check your network connection. If the issue persists, send us the error message and your app and OS versions.</p></details>
+    <details><summary>Where is my translation history stored?</summary><p>Recent translations (up to 200) are held in memory only while the app is running and are cleared when it quits. They are not written to a file or sent off your device.</p></details>
+    <details><summary>Are my screen contents or photos uploaded?</summary><p>No. Text recognition (Apple Vision) and translation (Apple’s translation feature) run on your device, and the developer does not operate a server. See the <a href="privacy.html">Privacy Policy</a> for details.</p></details>
+  </section>
+
+  <section class="section card" id="contact-en">
+    <h2>Contact</h2>
+    <p>Include the error message, app version, device and OS version, the mode you used (Mac frame, Camera, Image, Web or Safari extension) and the language pair. Hide personal information in screenshots.</p>
+    <p><a href="mailto:support@supracore.co.kr">support@supracore.co.kr</a></p>
+    <p class="muted">We usually reply within 2–3 days.</p>
+  </section>
+  <p><a href="privacy.html">Privacy Policy</a></p>
+</div>
+
+<footer>© 2026 SUPRACORE · TransWindow · 업데이트 / Updated: 2026-11-10</footer>
+</main>
+<script>
+function setLanguage(lang){
+  document.documentElement.lang=lang;
+  document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===lang)));
+  document.getElementById('content-ko').hidden=lang!=='ko';
+  document.getElementById('content-en').hidden=lang!=='en';
+}
+document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.lang)));
+setLanguage(location.hash.endsWith('-en')||(!location.hash&&navigator.language&&!navigator.language.startsWith('ko'))?'en':'ko');
+</script>
+</body>
+</html>
