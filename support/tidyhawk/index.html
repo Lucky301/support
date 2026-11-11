@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="TidyHawk 지원: Mac 캐시·개발 도구 흔적·AI 모델·큰 파일·중복 파일 정리, 폴더 접근 허락, Pro 구매 복원 및 문제 해결. Support for TidyHawk, a storage cleanup utility for Mac.">
+<title>TidyHawk — 지원 / Support</title>
+<link rel="icon" href="app-icon.png">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#0a1230;color:#f4f6ff;font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse at 15% 10%,#1d3fae88,transparent 60%),radial-gradient(ellipse at 90% 80%,#0f5a7a66,transparent 60%);pointer-events:none;z-index:-1}
+.wrap{max-width:960px;margin:auto;padding:28px 24px 64px}
+header{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700}
+.brand img{width:48px;height:48px;border-radius:12px}
+.langs{display:flex;gap:8px}
+button{font:inherit;color:#fff;border:1px solid #78819c;background:transparent;padding:7px 12px;border-radius:20px;cursor:pointer}
+button[aria-pressed=true]{background:#7fdcf5;color:#0a1230;border-color:#7fdcf5}
+a{color:#8fe3f8;text-underline-offset:4px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #8fe3f8;outline-offset:5px}
+.hero{padding:54px 0 32px;animation:arrive .6s ease-out}
+.eyebrow{color:#8fe3f8;font-size:13px;font-weight:600;letter-spacing:.08em}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.2;margin:14px 0 20px;letter-spacing:-.03em}
+h2{font-size:23px;margin:0 0 18px}
+h3{font-size:17px;margin:0 0 8px}
+p{margin:0 0 12px}
+.muted{color:#b9c3d8}
+.nav{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}
+.nav a{text-decoration:none;background:#ffffff0b;border:1px solid #ffffff26;border-radius:24px;padding:8px 16px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{border:1px solid #ffffff24;border-radius:22px;padding:24px;background:#ffffff07}
+.section{margin:36px 0;scroll-margin-top:24px}
+.notice{border-left:3px solid #8fe3f8;background:#8fe3f809;padding:18px 22px;border-radius:0 16px 16px 0}
+.badge{display:inline-block;font-size:12px;background:#8fe3f81c;color:#8fe3f8;border-radius:12px;padding:2px 10px;margin-bottom:12px}
+ul,ol{padding-left:22px;margin:8px 0}
+li{margin:6px 0}
+details{border-top:1px solid #ffffff24;padding:16px 0}
+summary{cursor:pointer;font-weight:600}
+details p{margin-top:12px;color:#c5cede}
+footer{border-top:1px solid #ffffff24;margin-top:44px;padding-top:22px;font-size:13px;color:#b9c3d8}
+#top-ko,#top-en{scroll-margin-top:140px}
+[hidden]{display:none!important}
+@keyframes arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}.wrap{padding:20px 18px 48px}.card{padding:20px}.hero{padding-top:38px}header{align-items:flex-start}.langs{flex-wrap:wrap;justify-content:flex-end}h2{font-size:21px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero{animation:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header>
+  <div class="brand"><img src="app-icon.png" alt="" width="48" height="48">TidyHawk</div>
+  <div class="langs" role="group" aria-label="Language / 언어">
+    <button type="button" data-lang="ko" aria-pressed="true">한국어</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<div id="content-ko" lang="ko">
+  <div class="hero" id="top-ko">
+    <div class="eyebrow">TIDYHAWK · 지원</div>
+    <h1>먼저 살펴보고,<br>고른 것만 정리.</h1>
+    <p class="muted">Mac의 캐시, 개발 도구 흔적, AI 모델, 큰 파일과 중복 파일을 찾아 직접 고른 항목만 휴지통으로 옮깁니다.<br>스캔과 정리는 모두 이 Mac 안에서 이루어집니다.</p>
+    <nav class="nav" aria-label="페이지 메뉴">
+      <a href="#start-ko">시작하기</a>
+      <a href="#screens-ko">정리 화면</a>
+      <a href="#pro-ko">무료 / Pro</a>
+      <a href="#faq-ko">문제 해결</a>
+      <a href="#contact-ko">문의</a>
+    </nav>
+    <p class="muted">macOS 14 이상 · 버전 1.1 기준이며, 사용 중인 버전에 따라 메뉴가 다를 수 있습니다.</p>
+  </div>
+
+  <section class="section" id="start-ko">
+    <h2>어디서 시작하나요?</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="badge">1</span>
+        <h3>홈 폴더 접근 허락</h3>
+        <p>App Store 앱은 허락받은 폴더만 볼 수 있습니다. 정리 화면을 처음 열면 나오는 창에서 홈 폴더를 그대로 두고 ‘허락’을 누르세요.</p>
+        <p class="muted">허락은 이 Mac에만 저장되고 설정에서 언제든 거둘 수 있습니다.</p>
+      </article>
+      <article class="card">
+        <span class="badge">2</span>
+        <h3>빠른 스캔</h3>
+        <p>한눈에 보기의 ‘빠른 스캔 시작’을 누르면 시스템 정크, 개발자 정크, AI 정리를 차례로 살펴봅니다.</p>
+        <p class="muted">스캔은 읽기만 하며 파일을 지우지 않습니다.</p>
+      </article>
+      <article class="card">
+        <span class="badge">3</span>
+        <h3>골라서 휴지통으로</h3>
+        <p>결과에서 항목을 확인하고 고른 뒤 ‘휴지통으로 옮기기’를 누릅니다. 실행 중인 앱이 쓰는 항목은 기본으로 고르지 않습니다.</p>
+        <p class="muted">옮긴 파일은 휴지통에 남고, 앱이 휴지통을 비우지는 않습니다.</p>
+      </article>
+      <article class="card">
+        <span class="badge">4</span>
+        <h3>정리 기록</h3>
+        <p>최근 50회의 정리 날짜, 옮긴 용량, 성공·실패 항목을 정리 기록에서 확인합니다. 휴지통에 남아 있는 항목은 Finder에서 바로 볼 수 있습니다.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="screens-ko">
+    <h2>정리 화면</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>시스템 정크</h3>
+        <p>앱 캐시, 로그, 진단 보고서, 브라우저 캐시, 받아 둔 설치 파일의 사본처럼 다시 만들어지는 파일을 찾습니다.</p>
+      </article>
+      <article class="card">
+        <h3>개발자 정크</h3>
+        <p>Xcode 빌드 결과물과 기기 지원 파일, 시뮬레이터·패키지 관리자 캐시, 오래된 프로젝트의 의존성 폴더를 찾습니다. Docker·OrbStack 같은 도구는 용량과 정리 명령을 안내합니다.</p>
+      </article>
+      <article class="card">
+        <h3>AI 정리</h3>
+        <p>AI 앱 캐시와 중단된 다운로드 조각을 정리하고, Ollama·Hugging Face·LM Studio·ComfyUI 등에서 받은 모델을 골라 지우거나 외장 디스크로 옮깁니다.</p>
+      </article>
+      <article class="card">
+        <h3>대용량·오래된 파일</h3>
+        <p>홈 폴더의 큰 파일을 크기·종류·기간으로 걸러 봅니다. 고른 파일을 다른 디스크로 옮길 수도 있습니다.</p>
+      </article>
+      <article class="card">
+        <h3>중복 파일</h3>
+        <p>내용이 완전히 같은 파일을 묶어 보여 줍니다. 묶음마다 하나는 남겨야 정리할 수 있습니다.</p>
+      </article>
+      <article class="card">
+        <h3>폴더 용량</h3>
+        <p>홈 폴더에서 시작해 어느 폴더가 공간을 많이 쓰는지 따라 들어가며 확인합니다.</p>
+      </article>
+      <article class="card">
+        <h3>앱 제거</h3>
+        <p>앱과 함께 남은 설정·캐시·컨테이너를 찾아 함께 정리하고, 이미 지운 앱이 남긴 파일도 찾습니다.</p>
+      </article>
+      <article class="card">
+        <h3>공간 변화</h3>
+        <p>날짜별 여유 공간 그래프와 지난 측정보다 늘어난 폴더를 보여 줍니다.</p>
+      </article>
+    </div>
+    <p class="notice" style="margin-top:16px">단축어 앱에서 ‘여유 공간 확인’과 ‘빠른 스캔 시작’을 쓸 수 있고, 여유 공간 위젯을 바탕화면이나 알림 센터에 둘 수 있습니다.</p>
+  </section>
+
+  <section class="section" id="pro-ko">
+    <h2>무료 기능과 Pro</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>무료로 사용</h3>
+        <ul>
+          <li>모든 화면의 스캔, 검색, 결과와 용량 확인</li>
+          <li>폴더 용량, 공간 변화, 정리 기록 보기</li>
+          <li>단축어와 여유 공간 위젯</li>
+          <li>여유 공간 부족·정리 시기 알림</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Pro · 1회 구매</h3>
+        <ul>
+          <li>고른 파일과 앱을 휴지통으로 옮기기</li>
+          <li>대용량 파일과 AI 모델을 다른 디스크로 옮기기</li>
+          <li>검색 결과에서 Finder로 바로 보기</li>
+        </ul>
+        <p class="muted">구독이 아닙니다. 가격은 앱 내 구매 화면에서 확인하세요.</p>
+      </article>
+    </div>
+    <p class="notice" style="margin-top:16px">Pro를 구매해도 파일이 자동으로 정리되지는 않습니다. 고른 항목을 확인한 뒤 직접 실행해야 하며, macOS의 접근 권한 제한은 그대로 적용됩니다. 다시 설치했거나 다른 Mac이라면 Pro 화면의 ‘구매 복원’을 눌러 주세요.</p>
+  </section>
+
+  <section class="section" id="faq-ko">
+    <h2>자주 묻는 질문 · 문제 해결</h2>
+    <details><summary>스캔하면 파일이 지워지나요?</summary><p>아니요. 스캔은 읽기만 합니다. 직접 고른 항목만, 확인 창을 거친 뒤 휴지통으로 옮깁니다.</p></details>
+    <details><summary>정리한 파일을 되살리고 싶어요.</summary><p>휴지통을 비우기 전이라면 Finder에서 휴지통을 열어 항목을 고르고 ‘되돌려 놓기’를 선택하세요. 정리 기록에서 휴지통 안의 위치를 바로 열 수 있습니다.</p></details>
+    <details><summary>정리했는데 여유 공간이 늘지 않아요.</summary><p>옮긴 파일은 휴지통에 남아 있습니다. 휴지통을 비워야 공간이 확보되며, 시스템 스냅샷이나 다른 파일과 공유하는 공간 때문에 표시한 용량만큼 늘지 않을 수도 있습니다.</p></details>
+    <details><summary>‘확인하지 못한 위치’가 있다고 나와요.</summary><p>macOS가 접근을 막았거나 디스크 연결이 끊긴 위치입니다. 안내의 ‘권한·연결 문제 보기’에서 위치를 확인하고, 시스템 설정 &gt; 개인정보 보호 및 보안 &gt; 파일 및 폴더에서 TidyHawk 항목을 살펴보세요. 일부 시스템 폴더와 다른 앱의 보관함은 허락해도 읽을 수 없습니다.</p></details>
+    <details><summary>‘실행 중’ 표시가 붙은 항목은 무엇인가요?</summary><p>지금 실행 중인 앱이 쓰고 있을 수 있는 항목입니다. 기본으로 고르지 않으며, 해당 앱을 종료한 뒤 정리하는 것이 안전합니다.</p></details>
+    <details><summary>AI 모델을 다른 디스크로 옮기면 어떻게 되나요?</summary><p>고른 모델을 외장 디스크에 복사하고 크기와 파일 수를 확인한 다음 원본을 휴지통으로 옮깁니다. 옮긴 뒤에는 도구가 새 위치를 찾도록 설정하는 방법을 안내하며, 앱이 설정을 대신 바꾸지는 않습니다. Ollama 모델은 데이터를 여러 모델이 함께 써서 옮기지 않습니다.</p></details>
+    <details><summary>중복 파일 화면에서 정리 버튼이 눌리지 않아요.</summary><p>어느 묶음의 파일을 모두 고르면 하나도 남지 않게 되므로 정리를 막습니다. 남길 파일의 선택을 풀어 주세요.</p></details>
+    <details><summary>Docker나 시뮬레이터 용량이 큰데 왜 지워 주지 않나요?</summary><p>이런 데이터는 해당 도구가 직접 지워야 안전합니다. TidyHawk는 용량과 정리 명령을 보여 주고 복사만 하며, 명령은 내용을 확인한 뒤 터미널에서 직접 실행하세요.</p></details>
+    <details><summary>Pro를 구매했는데 잠겨 있어요.</summary><p>구매한 Apple 계정으로 로그인했는지 확인하고, Pro 화면에서 ‘구매 복원’을 선택하세요. 네트워크 연결도 확인해 주세요. 계속 문제가 있으면 오류 문구와 앱·macOS 버전을 보내 주세요.</p></details>
+    <details><summary>파일이나 스캔 결과가 서버로 전송되나요?</summary><p>아니요. 스캔과 정리는 이 Mac 안에서 처리하며, 개발자는 서버를 운영하지 않습니다. 자세한 내용은 <a href="privacy.html">개인정보 처리방침</a>을 확인하세요.</p></details>
+  </section>
+
+  <section class="section card" id="contact-ko">
+    <h2>문의</h2>
+    <p>오류 내용, 앱 버전, macOS 버전, 사용한 화면(시스템 정크·개발자 정크·AI 정리 등)을 알려 주세요. 화면을 첨부할 때는 파일 경로와 계정 이름 같은 개인정보를 가려 주세요. 암호나 개인 파일은 보내지 마세요.</p>
+    <p><a href="mailto:support@supracore.co.kr">support@supracore.co.kr</a></p>
+    <p class="muted">보통 2~3일 안에 답변드립니다.</p>
+  </section>
+  <p><a href="privacy.html">개인정보 처리방침</a></p>
+</div>
+
+<div id="content-en" lang="en">
+  <div class="hero" id="top-en">
+    <div class="eyebrow">TIDYHAWK · SUPPORT</div>
+    <h1>Review first,<br>clean only what you choose.</h1>
+    <p class="muted">TidyHawk finds caches, developer tool leftovers, AI models, large files and duplicate files on your Mac, and moves only the items you select to Trash.<br>Scanning and cleanup happen entirely on this Mac.</p>
+    <nav class="nav" aria-label="Page navigation">
+      <a href="#start-en">Get started</a>
+      <a href="#screens-en">Cleanup screens</a>
+      <a href="#pro-en">Free / Pro</a>
+      <a href="#faq-en">Help</a>
+      <a href="#contact-en">Contact</a>
+    </nav>
+    <p class="muted">Requires macOS 14 or later. Written for version 1.1; menus may differ in your installed version.</p>
+  </div>
+
+  <section class="section" id="start-en">
+    <h2>Choose where to start</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="badge">1</span>
+        <h3>Allow access to your Home folder</h3>
+        <p>App Store apps can only see folders you allow. When a cleanup screen first asks, keep your Home folder selected in the dialog and click Allow.</p>
+        <p class="muted">The permission is stored only on this Mac and can be revoked in Settings at any time.</p>
+      </article>
+      <article class="card">
+        <span class="badge">2</span>
+        <h3>Quick Scan</h3>
+        <p>Click Start Quick Scan on Overview to review System Junk, Developer Junk and AI Cleanup in sequence.</p>
+        <p class="muted">Scanning only reads; it never deletes files.</p>
+      </article>
+      <article class="card">
+        <span class="badge">3</span>
+        <h3>Select and move to Trash</h3>
+        <p>Review the results, select items and click Move to Trash. Items used by running apps are not selected by default.</p>
+        <p class="muted">Moved files stay in Trash, and the app never empties Trash.</p>
+      </article>
+      <article class="card">
+        <span class="badge">4</span>
+        <h3>Cleanup History</h3>
+        <p>See the dates, moved sizes, and successful and failed items of the last 50 cleanups. Items still in Trash can be shown in Finder.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="screens-en">
+    <h2>Cleanup screens</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>System Junk</h3>
+        <p>Finds files that are recreated when needed, such as app caches, logs, diagnostic reports, browser caches and extra copies of downloaded installers.</p>
+      </article>
+      <article class="card">
+        <h3>Developer Junk</h3>
+        <p>Finds Xcode build products and device support files, simulator and package manager caches, and dependency folders of old projects. For tools such as Docker and OrbStack it shows their size and the cleanup command.</p>
+      </article>
+      <article class="card">
+        <h3>AI Cleanup</h3>
+        <p>Cleans AI app caches and interrupted download fragments, and lets you remove or move to an external disk the models downloaded with Ollama, Hugging Face, LM Studio, ComfyUI and others.</p>
+      </article>
+      <article class="card">
+        <h3>Large &amp; Old Files</h3>
+        <p>Filter large files in your Home folder by size, kind and age. Selected files can also be moved to another disk.</p>
+      </article>
+      <article class="card">
+        <h3>Duplicate Files</h3>
+        <p>Groups files with identical content. At least one copy in each set must remain before you can clean.</p>
+      </article>
+      <article class="card">
+        <h3>Folder Usage</h3>
+        <p>Starting from your Home folder, drill down to see which folders use the most space.</p>
+      </article>
+      <article class="card">
+        <h3>App Removal</h3>
+        <p>Finds the settings, caches and containers left with an app so you can clean them together, and finds leftovers of apps you already deleted.</p>
+      </article>
+      <article class="card">
+        <h3>Storage Trend</h3>
+        <p>Shows a chart of free space by day and the folders that grew since the last measurement.</p>
+      </article>
+    </div>
+    <p class="notice" style="margin-top:16px">The Shortcuts app offers Check Free Space and Start Quick Scan, and a Free Space widget can be added to your desktop or Notification Center.</p>
+  </section>
+
+  <section class="section" id="pro-en">
+    <h2>Free features and Pro</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Free to use</h3>
+        <ul>
+          <li>Scanning, searching and viewing results and sizes on every screen</li>
+          <li>Folder Usage, Storage Trend and Cleanup History</li>
+          <li>Shortcuts and the Free Space widget</li>
+          <li>Low-space and cleanup reminders</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Pro · One-time purchase</h3>
+        <ul>
+          <li>Moving selected files and apps to Trash</li>
+          <li>Moving large files and AI models to another disk</li>
+          <li>Showing search results in Finder</li>
+        </ul>
+        <p class="muted">Not a subscription. See the in-app purchase screen for pricing.</p>
+      </article>
+    </div>
+    <p class="notice" style="margin-top:16px">Purchasing Pro does not clean files automatically. You review the selected items and run cleanup yourself, and macOS access restrictions still apply. After reinstalling or on another Mac, choose Restore Purchases on the Pro screen.</p>
+  </section>
+
+  <section class="section" id="faq-en">
+    <h2>Frequently asked questions</h2>
+    <details><summary>Does scanning delete files?</summary><p>No. Scanning only reads. Only the items you select are moved to Trash, after a confirmation dialog.</p></details>
+    <details><summary>I want to get a cleaned file back.</summary><p>Before Trash is emptied, open Trash in Finder, select the item and choose Put Back. Cleanup History can show the item’s location in Trash.</p></details>
+    <details><summary>Free space did not increase after cleanup.</summary><p>Moved files remain in Trash. Space is freed when you empty Trash, and it may grow by less than the displayed size because of system snapshots or space shared with other files.</p></details>
+    <details><summary>The app says some locations could not be checked.</summary><p>macOS blocked access to them or a disk was disconnected. Open the permission and connection details in the notice, and review the TidyHawk entries in System Settings &gt; Privacy &amp; Security &gt; Files &amp; Folders. Some system folders and other apps’ containers cannot be read even with permission.</p></details>
+    <details><summary>What does the “Running” badge mean?</summary><p>The item may be in use by an app that is running now. It is not selected by default; quit that app before cleaning it.</p></details>
+    <details><summary>What happens when I move AI models to another disk?</summary><p>The selected models are copied to the external disk, the size and file count are verified, and then the originals are moved to Trash. Afterwards the app explains how to point the tool at the new location; it does not change settings for you. Ollama models are not moved because several models share the same data.</p></details>
+    <details><summary>The clean button is disabled on Duplicate Files.</summary><p>When every copy in a set is selected, no copy would remain, so cleanup is blocked. Deselect the file you want to keep.</p></details>
+    <details><summary>Docker or simulator data is large. Why doesn’t the app remove it?</summary><p>That data is safest when removed by the tool itself. TidyHawk shows the size and the cleanup command and only copies it; review it and run it in Terminal yourself.</p></details>
+    <details><summary>I purchased Pro, but it still looks locked.</summary><p>Check that you are signed in with the Apple Account used for the purchase and choose Restore Purchases on the Pro screen. Check your network connection. If the issue persists, send us the error message and your app and macOS versions.</p></details>
+    <details><summary>Are my files or scan results uploaded?</summary><p>No. Scanning and cleanup run on this Mac, and the developer does not operate a server. See the <a href="privacy.html">Privacy Policy</a> for details.</p></details>
+  </section>
+
+  <section class="section card" id="contact-en">
+    <h2>Contact</h2>
+    <p>Include the error message, app version, macOS version and the screen you used (System Junk, Developer Junk, AI Cleanup and so on). Hide personal information such as file paths and account names in screenshots. Do not send passwords or personal files.</p>
+    <p><a href="mailto:support@supracore.co.kr">support@supracore.co.kr</a></p>
+    <p class="muted">We usually reply within 2–3 days.</p>
+  </section>
+  <p><a href="privacy.html">Privacy Policy</a></p>
+</div>
+
+<footer>© 2026 SUPRACORE · TidyHawk · 업데이트 / Updated: 2026-11-11</footer>
+</main>
+<script>
+function setLanguage(lang){
+  document.documentElement.lang=lang;
+  document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===lang)));
+  document.getElementById('content-ko').hidden=lang!=='ko';
+  document.getElementById('content-en').hidden=lang!=='en';
+}
+document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.lang)));
+setLanguage(location.hash.endsWith('-en')||(!location.hash&&navigator.language&&!navigator.language.startsWith('ko'))?'en':'ko');
+</script>
+</body>
+</html>
